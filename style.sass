@@ -1,4 +1,9 @@
 $border-radius:  20px
+$fa-font-path: "./node_modules/@fortawesome/fontawesome-free/webfonts"
+
+@import './node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss'
+@import './node_modules/@fortawesome/fontawesome-free/scss/solid.scss'
+@import './node_modules/@fortawesome/fontawesome-free/scss/brands.scss'
     
 @import './node_modules/bootstrap/scss/bootstrap.scss'
 
@@ -10,6 +15,7 @@ $border-radius:  20px
         filter: brightness(0.25)
 
 header
+    position: relative
     nav
         a
             color: white
@@ -28,8 +34,11 @@ header
 
 #decoration
     background-image: url('./images/bottom_decoration_img.png')
-    background-color: black
     height: 10px
+    position: absolute
+    bottom: 0
+    width: 100%
+    
 
 #decoration-footer
     background-image: url('./images/footer_bottom_decoration_img.png')
@@ -64,18 +73,40 @@ header
     border-bottom-width: 1px
 
 #tabs
+    padding-right: 0
     .active
-        color: #C42D40
+        border-right: 5px solid #C42D40
+        i
+            color: #C42D40
+
     a
         background-color: white
+        color: black
     i 
         color: #CCCCCC
-    
+        font-size:35px
+                    
 #section-chef
     background-color: black
+    .col-3
+        position: relative
+        overflow: hidden
+        .modal-chef
+            position: absolute
+            background-color: red
+            width: 200px
+            height:100px
+            bottom: -170px
+            transition-duration: .2s
+    .col-3:hover .modal-chef
+            bottom: 0px
+            
+   
+        
 
 #form
     background-image: url('./images/book_table_bg.jpg')
+    background-size: cover
     border-radius:15px
     margin-left:125px
     margin-right:125px
@@ -86,6 +117,10 @@ header
         input
             border-radius:20px
             padding:25px 0px
+        select 
+            border-radius:20px
+            padding:25px 0px
+                
 
 .img-border
     border-radius:20px
@@ -103,7 +138,7 @@ header
     padding-left:50px
     position: absolute
     top:220px
-    left:44px
+    left:30px
 
 .btn-color
     background-color: #C42D40
@@ -111,8 +146,18 @@ header
 .txt-color
     color: #C42D40
 
+.badge-color
+    background-color:#EFEFEF
+
+.border-5px
+    border-style: solid
+    border-width: 5px
+
+.high-cap
+    font-size: 23px
+
 #section-testimonials
-    background-image: url('./images/testimonials_background.jpg') 
+    background-image: url('./images/testimonials_background.jpg')
   
 
 #section-contact

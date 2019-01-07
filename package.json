@@ -19,6 +19,8 @@
   "dependencies": {
     "bootstrap": "^4.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3"
+  },
   "description": ""
 }
