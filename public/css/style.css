@@ -5555,8 +5555,8 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 900;
-  src: url("./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot");
-  src: url("./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"), url("./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff") format("woff"), url("./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype"), url("./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot");
+  src: url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff") format("woff"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 .fa,
 .fas {
@@ -5572,8 +5572,8 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
-  src: url("./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot");
-  src: url("./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2") format("woff2"), url("./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff") format("woff"), url("./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf") format("truetype"), url("./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot");
+  src: url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2") format("woff2"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff") format("woff"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf") format("truetype"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 .fab {
   font-family: "Font Awesome 5 Brands";
@@ -15091,6 +15091,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+@font-face {
+  font-family: "Courgette";
+  src: url("../../public/fonts/Courgette-Regular.ttf");
+}
 .courgette {
   font-family: Courgette;
 }
@@ -15123,7 +15127,7 @@ header nav a {
 }
 
 #decoration {
-  background-image: url("./images/bottom_decoration_img.png");
+  background-image: url("../../public/images/bottom_decoration_img.png");
   height: 10px;
   position: absolute;
   bottom: 0;
@@ -15131,13 +15135,13 @@ header nav a {
 }
 
 #decoration-footer {
-  background-image: url("./images/footer_bottom_decoration_img.png");
+  background-image: url("../../public/images/footer_bottom_decoration_img.png");
   background-color: black;
   height: 10px;
 }
 
 .section-carte {
-  background-image: url("./images/main_bg.jpg");
+  background-image: url("../../public/images/main_bg.jpg");
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 100px;
@@ -15204,7 +15208,7 @@ header nav a {
 }
 
 #form {
-  background-image: url("./images/book_table_bg.jpg");
+  background-image: url("../../public/images/book_table_bg.jpg");
   background-size: cover;
   border-radius: 15px;
   margin-left: 125px;
@@ -15268,22 +15272,26 @@ header nav a {
 }
 
 #section-testimonials {
-  background-image: url("./images/testimonials_background.jpg");
+  background-image: url("../../public/images/testimonials_background.jpg");
+  background-image-filter: brightness(0.25);
 }
 
 #section-contact {
-  background-image: url("./images/main_bg.jpg");
+  background-image: url("../../public/images/main_bg.jpg");
 }
 #section-contact i {
   font-size: 35px;
 }
 
 #footer {
-  background-image: url("./images/footer_background.jpg");
+  background-image: url("../../public/images/footer_background.jpg");
 }
 
 footer {
   height: 100px;
+}
+footer p {
+  padding-top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
