@@ -15104,6 +15104,8 @@ header {
 }
 header nav a {
   color: white;
+  width: 130px;
+  text-align: center;
 }
 
 #carouselExampleIndicators li {
@@ -15191,14 +15193,14 @@ header nav a {
 }
 #section-chef .col-3 .modal-chef {
   position: absolute;
-  background-color: red;
-  width: 200px;
-  height: 100px;
-  bottom: -170px;
-  transition-duration: 0.2s;
+  background-color: #C42D40;
+  width: 232px;
+  height: 200px;
+  bottom: -270px;
+  transition-duration: 0.4s;
 }
 #section-chef .col-3:hover .modal-chef {
-  bottom: 0px;
+  bottom: 40px;
 }
 
 #form {
@@ -15217,6 +15219,10 @@ header nav a {
 #carte form select {
   border-radius: 20px;
   padding: 25px 0px;
+}
+
+::-webkit-input-placeholder {
+  padding-left: 20px;
 }
 
 .img-border {
