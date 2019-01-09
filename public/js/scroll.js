@@ -13,5 +13,3 @@ window.onscroll = function(){
 
     }
 };
-
-// scrollEventActive(0, 600, 'l-home');

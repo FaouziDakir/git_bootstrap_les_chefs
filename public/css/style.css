@@ -15099,10 +15099,6 @@ h3 {
   font-family: Courgette;
 }
 
-#carouselExampleIndicators img {
-  filter: brightness(0.25);
-}
-
 header {
   position: relative;
 }
@@ -15111,15 +15107,23 @@ header nav a {
   width: 130px;
   text-align: center;
 }
+header nav a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #C42D40;
+}
 
 #carouselExampleIndicators li {
   border-radius: 50%;
   height: 15px;
   width: 15px;
 }
+#carouselExampleIndicators img {
+  filter: brightness(0.25);
+}
 
 #banner-text {
-  margin-bottom: 400px;
+  margin-bottom: 30%;
 }
 
 #banner-text-size {
@@ -15144,12 +15148,22 @@ header nav a {
   background-image: url("../../public/images/main_bg.jpg");
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-right: 100px;
-  padding-left: 100px;
 }
 
-#carte {
-  background-color: white;
+.triangle {
+  position: absolute;
+}
+
+.haut {
+  top: 0;
+}
+
+.bas {
+  bottom: 0;
+}
+
+.droite {
+  right: 0;
 }
 
 .decoration-line {
@@ -15158,16 +15172,12 @@ header nav a {
 }
 
 #paragraphe-carte {
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px auto;
 }
 
-.border-style {
-  border-bottom-style: dotted;
-  border-color: #CCCCCC;
-  border-bottom-width: 1px;
+.border-dotted {
+  border-bottom: 2px dotted grey;
+  width: 110%;
 }
 
 #tabs {
@@ -15189,13 +15199,13 @@ header nav a {
 }
 
 #section-chef {
-  background-color: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../public/images/team_background.jpg");
 }
-#section-chef .col-3 {
+#section-chef .col-md-3 {
   position: relative;
   overflow: hidden;
 }
-#section-chef .col-3 .modal-chef {
+#section-chef .col-md-3 .modal-chef {
   position: absolute;
   background-color: #C42D40;
   width: 232px;
@@ -15203,8 +15213,8 @@ header nav a {
   bottom: -270px;
   transition-duration: 0.4s;
 }
-#section-chef .col-3:hover .modal-chef {
-  bottom: 40px;
+#section-chef .col-md-3:hover .modal-chef {
+  bottom: 36px;
 }
 
 #form {
@@ -15216,6 +15226,10 @@ header nav a {
   padding: 70px;
 }
 
+#carte {
+  background-color: white;
+  position: relative;
+}
 #carte form input {
   border-radius: 20px;
   padding: 25px 0px;
@@ -15272,8 +15286,7 @@ header nav a {
 }
 
 #section-testimonials {
-  background-image: url("../../public/images/testimonials_background.jpg");
-  background-image-filter: brightness(0.25);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../public/images/testimonials_background.jpg");
 }
 
 #section-contact {
@@ -15281,6 +15294,10 @@ header nav a {
 }
 #section-contact i {
   font-size: 35px;
+}
+
+.w-35 {
+  width: 35%;
 }
 
 #footer {
@@ -15292,6 +15309,42 @@ footer {
 }
 footer p {
   padding-top: 40px;
+}
+
+@media (max-width: 576px) {
+  #nav3 {
+    display: none;
+  }
+
+  #navbar {
+    position: sticky;
+  }
+
+  p, h1, .number {
+    font-size: 15px;
+  }
+
+  #carte form input, #carte form select {
+    width: 130px;
+  }
+
+  #carte {
+    right: 100;
+  }
+
+  #banner-text {
+    height: 53%;
+  }
+  #banner-text button {
+    height: 25%;
+    width: 25%;
+    font-size: 5px;
+  }
+}
+@media (min-width: 576px) {
+  #nav-toggle {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
